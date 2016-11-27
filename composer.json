@@ -1,0 +1,31 @@
+{
+    "name": "onlime/swiss-zip-code-resolver",
+    "type": "library",
+    "description": "A resolver for Swiss zip codes (PLZ).",
+    "keywords": ["zipcode", "zip code", "postal code", "swiss", "switzerland", "plz", "php"],
+    "homepage": "https://github.com/onlime/SwissZipCodeResolver",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Philip Iezzi",
+            "email": "github@onlime.ch",
+            "homepage": "https://www.onlime.ch/",
+            "role": "developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/onlime/SwissZipCodeResolver/issues"
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "ext-zip": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Onlime\\SwissZipCodeResolver\\": "src/"
+        }
+    },
+    "suggest": {
+        "ext-zip": "Some PHP versions does not include it by default"
+    }
+}
