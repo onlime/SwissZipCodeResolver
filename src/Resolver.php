@@ -273,6 +273,7 @@ class Resolver
                     $record['city'],
                     $record['extraDigit'],
                     $record['commune'],
+                    $record['bfsNr'],
                     $record['canton'],
                     $record['east'],
                     $record['north'],
@@ -365,12 +366,13 @@ class Resolver
         array_shift($dataLines); // we don't need the headers
         $parsedData = [];
         foreach ($dataLines as $line) {
-            list($city, $zipcode, $extraDigit, $commune, $canton, $east, $north) = str_getcsv($line, ';');
+            list($city, $zipcode, $extraDigit, $commune, $bfsNr, $canton, $east, $north) = str_getcsv($line, ';');
             $parsedData[$zipcode] = [
                 'zipcode'    => $zipcode,
                 'city'       => $city,
                 'extraDigit' => $extraDigit,
                 'commune'    => $commune,
+                'bfsNr'     => $bfsNr,
                 'canton'     => $canton,
                 'east'       => $east,
                 'north'      => $north

@@ -66,6 +66,14 @@ class Result
      */
     public $canton;
 
+
+    /**
+     * Canton (BFS-Nr)
+     *
+     * @var string
+     */
+    public $bfsNr;
+
     /**
      * East coordinate
      * 
@@ -94,18 +102,20 @@ class Result
      * @param string $city
      * @param int $extraDigit
      * @param string $commune
+     * @param string $bfsNr
      * @param string $canton
      * @param int $east
      * @param int $north
      * @param bool $validZipCode
      */
-    public function __construct($zipcode, $city = '', $extraDigit = 0, $commune = '', $canton = '', 
+    public function __construct($zipcode, $city = '', $extraDigit = 0, $commune = '', $bfsNr = '', $canton = '',
                                 $east = 0, $north = 0, $validZipCode = false)
     {
         $this->zipcode      = $zipcode;
         $this->city         = $city;
         $this->extraDigit   = $extraDigit;
         $this->commune      = $commune;
+        $this->bfsNr      = $bfsNr;
         $this->canton       = $canton;
         $this->east         = $east;
         $this->north        = $north;
@@ -221,6 +231,7 @@ class Result
         $xml->addChild('city', $this->city);
         $xml->addChild('extraDigit', $this->extraDigit);
         $xml->addChild('commune', $this->commune);
+        $xml->addChild('bfsNr', $this->bfsNr);
         $xml->addChild('canton', $this->canton);
         $xml->addChild('east', $this->east);
         $xml->addChild('north', $this->north);
