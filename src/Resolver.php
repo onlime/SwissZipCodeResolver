@@ -372,7 +372,7 @@ class Resolver
                 'city'       => $city,
                 'extraDigit' => $extraDigit,
                 'commune'    => $commune,
-                'bfsNr'     => $bfsNr,
+                'bfsNr'      => $bfsNr,
                 'canton'     => $canton,
                 'east'       => $east,
                 'north'      => $north

@@ -60,19 +60,18 @@ class Result
     public $commune;
 
     /**
+     * Commune number (Gemeindenummer / BFS-Nr)
+     *
+     * @var string
+     */
+    public $bfsNr;
+
+    /**
      * Canton (Kantonskürzel)
      * 
      * @var string
      */
     public $canton;
-
-
-    /**
-     * Canton (BFS-Nr)
-     *
-     * @var string
-     */
-    public $bfsNr;
 
     /**
      * East coordinate
@@ -102,20 +101,20 @@ class Result
      * @param string $city
      * @param int $extraDigit
      * @param string $commune
-     * @param string $bfsNr
+     * @param int $bfsNr
      * @param string $canton
      * @param int $east
      * @param int $north
      * @param bool $validZipCode
      */
-    public function __construct($zipcode, $city = '', $extraDigit = 0, $commune = '', $bfsNr = '', $canton = '',
+    public function __construct($zipcode, $city = '', $extraDigit = 0, $commune = '', $bfsNr = 0, $canton = '',
                                 $east = 0, $north = 0, $validZipCode = false)
     {
         $this->zipcode      = $zipcode;
         $this->city         = $city;
         $this->extraDigit   = $extraDigit;
         $this->commune      = $commune;
-        $this->bfsNr      = $bfsNr;
+        $this->bfsNr        = $bfsNr;
         $this->canton       = $canton;
         $this->east         = $east;
         $this->north        = $north;

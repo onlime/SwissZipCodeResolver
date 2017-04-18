@@ -37,6 +37,7 @@ Onlime\SwissZipCodeResolver\Result Object
     [city] => Zürich
     [extraDigit] => 0
     [commune] => Zürich
+    [bfsNr] => 261
     [canton] => ZH
     [east] => 680711
     [north] => 252925
@@ -65,7 +66,7 @@ $json = $Resolver->lookup(8046);
 The data is provided and updated by GEO.ADMIN.CH:
 
 - [GEO.ADMIN.CH - Geoinformationsplattform der Schweizerischen Eidgenossenschaft](http://data.geo.admin.ch/)
-- [Schweizerisches Katasterwesen - Amtliches Ortschaftenverzeichnis](http://www.cadastre.ch/internet/kataster/de/home/services/service/plz.html)
+- [Schweizerisches Katasterwesen - Amtliches Ortschaftenverzeichnis](https://www.cadastre.ch/de/services/service/plz.html)
 - [PLZO_CSV_LV03.zip](http://data.geo.admin.ch/ch.swisstopo-vd.ortschaftenverzeichnis_plz/PLZO_CSV_LV03.zip)
 
 
