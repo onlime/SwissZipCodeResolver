@@ -1,7 +1,9 @@
-# Onlime's Swiss Zip Code Resolver
-
 > :warning: This project was abondoned in favor of [aternus/geonames-client](https://github.com/Aternus/geonames-client) which uses [GeoNames](http://www.geonames.org/) data.
 > I recommend using that project instead as it supports current international data and is very easy to use.
+
+# Onlime's Swiss Zip Code Resolver
+
+Copyright (c) Onlime GmbH, https://www.onlime.ch
 
 A simple zip code lookup library to get information like city, commune, canton, and coordinates (LV03) for a Swiss zip code (PLZ).
 
